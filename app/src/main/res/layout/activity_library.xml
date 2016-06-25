@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <HorizontalScrollView
+        android:id="@+id/header_scroller"
+        style="@style/Wrapper"
+        android:scrollbars="none"
+        android:background="@android:color/holo_blue_bright">
+        <LinearLayout
+            style="@style/Wrapper"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/artists"
+                style="@style/HeaderText"
+                android:text="@string/artists"
+                android:textAllCaps="true" />
+            <TextView
+                android:id="@+id/albums"
+                style="@style/HeaderText"
+                android:text="@string/albums"
+                android:textAllCaps="true" />
+            <TextView
+                android:id="@+id/folders"
+                style="@style/HeaderText"
+                android:text="@string/folders"
+                android:textAllCaps="true" />
+            <TextView
+                android:id="@+id/tracks"
+                style="@style/HeaderText"
+                android:text="@string/tracks"
+                android:textAllCaps="true" />
+            <TextView
+                android:id="@+id/playlist"
+                style="@style/HeaderText"
+                android:text="@string/playlist"
+                android:textAllCaps="true" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/music_library_description"
+        android:layout_below="@id/header_scroller"
+        style="@style/Wrapper"
+        android:layout_margin="15dp"
+        android:text="@string/library_description"/>
+    <LinearLayout
+        android:id="@+id/test_library_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/library_element_image"
+            style="@style/MediaIcon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_light">
+        <ImageView
+            android:id="@+id/current_song_icon"
+            style="@style/MediaIcon"
+            android:src="@drawable/current_song_icon"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="Playback controls for current song"/>
+    </LinearLayout>
+</RelativeLayout>

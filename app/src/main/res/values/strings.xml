@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Musical Structure</string>
+    <string name="artists">Artists</string>
+    <string name="albums">Albums</string>
+    <string name="folders">Folders</string>
+    <string name="tracks">Tracks</string>
+    <string name="playlist">Playlist</string>
+    <string name="library_description">Music library activity\nThis is where we get upon opening the app\nFrom here we should be able to access various song groupings:\nby artist, by album, by folder, etc\nClicking on an element replaces playlist with that element\nA search function may be realized here, but it is not included since it does not require activity change</string>
+    <string name="playlist_description">Music library activity\nThis is where we get upon opening the app\nFrom here we should be able to access various song groupings:\nby artist, by album, by folder, etc\nClicking on an element plays that element</string>
+    <string name="current_playback_activity_description">This activity contains various controls for playback control.\nMoving to a different activity may be done via \"Back\" button</string>
+</resources>
