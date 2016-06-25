@@ -62,6 +62,7 @@ public class ArtistsLibraryActivity extends AppCompatActivity {
         });
     }
     private void hookCurrentPlayback() {
+        // add listener to the bottom menu (icon can be clicked to move to current playback)
         View currentSongIcon = findViewById(R.id.current_song_icon);
         currentSongIcon.setOnClickListener(new View.OnClickListener() {
             @Override
